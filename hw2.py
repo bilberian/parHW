@@ -1,5 +1,3 @@
-
-
 number = int(input('Insert a number: '))
 
 def multTable(num):
