@@ -32,7 +32,7 @@ def pearson(array_x, array_y):
     # получаю делимое
     dividend = sum(arrays_multiplication(array_subtraction(array_x, mean_x), array_subtraction(array_y, mean_y)))
     # получаю делитель
-    divisor = cmath.sqrt(sum(arrays_multiplication(array_exponent(array_subtraction(array_x, mean_x)), array_exponent(array_subtraction(array_y, mean_y)))))
+    divisor = cmath.sqrt(sum(array_exponent(array_subtraction(array_x, mean_x)))) * cmath.sqrt(sum(array_exponent(array_subtraction(array_y, mean_y))))
     return dividend/divisor
 
 print(pearson(array_x, array_y))
